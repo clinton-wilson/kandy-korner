@@ -1,5 +1,6 @@
 /* Import the google web fonts you want to use */
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import url('http://fonts.cdnfonts.com/css/candy-cane');
 
 /*Typography
 --------------------------------------------------------------*/
@@ -15,10 +16,22 @@ textarea {
 }
 
 body {
-    padding: 0 3rem;
+  padding: 0 3rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-family: 'Candy Cane (Unregistered)', sans-serif;
+  ;
+  font-size: 4.5rem;
+  text-shadow: 2px 2px rgb(232, 244, 154);
+  color: rgb(125, 37, 125);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
@@ -30,4 +43,3 @@ p {
 .title--main {
   margin-block-end: 0;
 }
-

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { Products } from "./Products"
+import "./productForm.css"
 
 export const ProductForm = () => {
     const [productTypes, setProductTypes] = useState([])
@@ -27,9 +27,6 @@ export const ProductForm = () => {
     )
 
 
-
-    const localKandyUser = localStorage.getItem("kandy_user")
-    const kandyUserObject = JSON.parse(localKandyUser)
 
     const handleSaveButtonClick = (event) => {
         event.preventDefault()
@@ -90,7 +87,7 @@ export const ProductForm = () => {
                 </div>
             </fieldset>
             <fieldset>
-                <div>
+                <div className="form-group">
                     <label htmlFor="type">Type:  </label>
                     <select value={product.productTypeId} onChange={
                         (evt) => {
